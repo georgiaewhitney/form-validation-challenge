@@ -31,7 +31,8 @@
         >message
         <span aria-hidden="true">*</span>
       </label>
-      <textarea id="message" rows="5" required></textarea>
+      <p id="message-help">Your message must be a maximum of 140 characters</p>
+      <textarea id="message" rows="5" required maxlength="140" aria-describedby="message-help"></textarea>
 
       <button>Submit</button>
     </form>
