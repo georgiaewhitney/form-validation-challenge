@@ -22,6 +22,7 @@ fields.forEach((field) => {
 
   // prevent aria-describedBy overwrite
   const prevIds = field.getAttribute("aria-describedBy");
+  // value is 
   const describedBy = prevIds ? prevIds + " " + id : id;
   field.setAttribute("aria-describedBy", describedBy);
 
