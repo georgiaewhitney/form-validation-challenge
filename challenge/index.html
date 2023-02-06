@@ -9,11 +9,15 @@
   </head>
   <body>
     <form>
-      <label for="name">name</label>
-      <input id="name" />
+      <label for="name">name
+        <span aria-hidden="true">*</span>
+      </label>
+      <input id="name" required/>
 
-      <label for="email">email</label>
-      <input id="email" />
+      <label for="email">email
+        <span aria-hidden="true">*</span>
+      </label>
+      <input id="email" required/>
 
       <label for="website">website</label>
       <input id="website" />
@@ -21,8 +25,10 @@
       <label for="subject">subject</label>
       <input id="subject" />
 
-      <label for="message">message</label>
-      <textarea id="message" rows="5"></textarea>
+      <label for="message">message
+        <span aria-hidden="true">*</span>
+      </label>
+      <textarea id="message" rows="5" required></textarea>
 
       <button>Submit</button>
     </form>
