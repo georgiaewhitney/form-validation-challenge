@@ -14,8 +14,9 @@ fields.forEach((field) => {
   // ensures all are false (valid) until checked
   field.setAttribute("aria-invalid", "false");
 
-  // create a feedback message for the user
+  // create a feedback element for the user
   const feedback = document.createElement("p");
+  // sets unique value linking it to the feedback msg
   const id = field.id + "Error";
   feedback.setAttribute("id", id);
 
@@ -26,6 +27,8 @@ fields.forEach((field) => {
 
   field.after(feedback);
   // challenge 5 - step 2
+
+  // INVALID input EL
   // when field fails, mark it as true (invalid)
   // update attribute when field fails
   field.addEventListener("invalid", () => {
